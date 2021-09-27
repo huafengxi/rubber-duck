@@ -1,0 +1,58 @@
+#+Title: Rubber Duck
+
+an *experiment pure C source build container*.
+
+It is a tiny pure C library, but not intented to be included by other source.
+
+for example: you write a =foo.c= , 
+#+begin_src c
+  int64_t gx = 0;
+  PERF(faa) {
+    FAA(&gx, 1); // test fetch and add
+  }
+#+end_src
+no main function, no include headers in above snipped.
+you compile it with: =make -f ~/rk/m foo= .
+
+* used as a build container
+assume top dir is =~/rk=
+: alias rkm="make -f ~/rk/m"
+: rkm foo # compile ./foo.c
+: rkm foo release=3 # for debug compile
+
+build and run demos
+: make s/mbench s/cbench s/evdemo s/ndemo
+: s/ndemo start stat pkts_io pktc_sync_perf # run echo server
+
+* publis as a library
+publish headers/sources with make
+: make $YOUR-PROJECT-ROOT/src/.pub:
+or rsync manually
+: rsync -avz ~/rk $YOUR-PROJECT-ROOT/src
+
+reference header
+#+begin_src cpp
+#define __FEATURE__ PACKET_IO // select feature, see rk/feature.h
+#include "rk/all.h" // or #include "rk/all.c"
+
+// call foo(), bar() without rk_ prefix
+#include "rk/ns.h"
+
+// call rk_foo(), rk_bar() with rk_ prefix
+#+end_src
+
+build
+: gcc -c rk/all.c && ld rk/all.o ...
+if you use =CMD/MODULE= macros, make sure:
+1. =-Wl,-Trk/lds/rk.lds= linker flags
+2. callback function is exported.
+
+* change namespace
+change the first line of =rk/Makefile=
+: ns = rk_
+then call cog
+: make cog
+
+* traps and pitfalls
+1. stack size should be big enough.
+2. no thread should exit during normal running.

@@ -1,0 +1,31 @@
+#define my_cfg_t tns(_cfg_t)
+#define my_resp_cb_on_sk_destroy tns(_resp_cb_on_sk_destroy)
+#define my_sf_do_init tns(_sf_do_init)
+#define my_sf_init tns(_sf_init)
+#define my_sf_t tns(_sf_t)
+#define my_sk_alloc tns(_sk_alloc)
+#define my_sk_delete tns(_sk_delete)
+#define my_sk_destroy tns(_sk_destroy)
+#define my_sk_free tns(_sk_free)
+#define my_sk_handle_event tns(_sk_handle_event)
+#define my_sk_init tns(_sk_init)
+#define my_sk_new tns(_sk_new)
+#define my_sk_t tns(_sk_t)
+#define my_t tns(_t)
+#define my_write_queue_on_sk_destroy tns(_write_queue_on_sk_destroy)
+#include "sk_factory.t.h"
+#undef my_cfg_t
+#undef my_resp_cb_on_sk_destroy
+#undef my_sf_do_init
+#undef my_sf_init
+#undef my_sf_t
+#undef my_sk_alloc
+#undef my_sk_delete
+#undef my_sk_destroy
+#undef my_sk_free
+#undef my_sk_handle_event
+#undef my_sk_init
+#undef my_sk_new
+#undef my_sk_t
+#undef my_t
+#undef my_write_queue_on_sk_destroy

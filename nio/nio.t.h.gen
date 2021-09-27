@@ -1,0 +1,119 @@
+#define my_cb_t tns(_cb_t)
+#define my_cfg_t tns(_cfg_t)
+#define my_create tns(_create)
+#define my_cur_resp tns(_cur_resp)
+#define my_decode tns(_decode)
+#define my_do_cb tns(_do_cb)
+#define my_do_cb_exception tns(_do_cb_exception)
+#define my_do_connect tns(_do_connect)
+#define my_do_init tns(_do_init)
+#define my_do_post tns(_do_post)
+#define my_evfd_cb tns(_evfd_cb)
+#define my_flush_cb tns(_flush_cb)
+#define my_flush_cb_after_flush tns(_flush_cb_after_flush)
+#define my_flush_cb_exception tns(_flush_cb_exception)
+#define my_flush_cb_on_post_fail tns(_flush_cb_on_post_fail)
+#define my_g_t tns(_g_t)
+#define my_get_id tns(_get_id)
+#define my_get_sk tns(_get_sk)
+#define my_handle_one_req tns(_handle_one_req)
+#define my_handle_req_queue tns(_handle_req_queue)
+#define my_init tns(_init)
+#define my_minit tns(_minit)
+#define my_minit_cfg tns(_minit_cfg)
+#define my_msg_t tns(_msg_t)
+#define my_post tns(_post)
+#define my_post_async tns(_post_async)
+#define my_post_io tns(_post_io)
+#define my_req_dispatch tns(_req_dispatch)
+#define my_req_t tns(_req_t)
+#define my_resp_cb_on_msg tns(_resp_cb_on_msg)
+#define my_resp_cb_on_post_fail tns(_resp_cb_on_post_fail)
+#define my_resp_cb_on_sk_destroy tns(_resp_cb_on_sk_destroy)
+#define my_resp_cb_on_timeout tns(_resp_cb_on_timeout)
+#define my_select_thread tns(_select_thread)
+#define my_sf_do_init tns(_sf_do_init)
+#define my_sf_init tns(_sf_init)
+#define my_sf_t tns(_sf_t)
+#define my_sk_alloc tns(_sk_alloc)
+#define my_sk_check_connect tns(_sk_check_connect)
+#define my_sk_consume tns(_sk_consume)
+#define my_sk_delete tns(_sk_delete)
+#define my_sk_destroy tns(_sk_destroy)
+#define my_sk_do_decode tns(_sk_do_decode)
+#define my_sk_do_flush tns(_sk_do_flush)
+#define my_sk_flush tns(_sk_flush)
+#define my_sk_free tns(_sk_free)
+#define my_sk_handle_event tns(_sk_handle_event)
+#define my_sk_handle_event_ready tns(_sk_handle_event_ready)
+#define my_sk_handle_msg tns(_sk_handle_msg)
+#define my_sk_init tns(_sk_init)
+#define my_sk_msg_done tns(_sk_msg_done)
+#define my_sk_new tns(_sk_new)
+#define my_sk_read tns(_sk_read)
+#define my_sk_t tns(_sk_t)
+#define my_start tns(_start)
+#define my_t tns(_t)
+#define my_thread_work tns(_thread_work)
+#define my_try_connect tns(_try_connect)
+#define my_write_queue_on_sk_destroy tns(_write_queue_on_sk_destroy)
+#include "nio.t.h"
+#undef my_cb_t
+#undef my_cfg_t
+#undef my_create
+#undef my_cur_resp
+#undef my_decode
+#undef my_do_cb
+#undef my_do_cb_exception
+#undef my_do_connect
+#undef my_do_init
+#undef my_do_post
+#undef my_evfd_cb
+#undef my_flush_cb
+#undef my_flush_cb_after_flush
+#undef my_flush_cb_exception
+#undef my_flush_cb_on_post_fail
+#undef my_g_t
+#undef my_get_id
+#undef my_get_sk
+#undef my_handle_one_req
+#undef my_handle_req_queue
+#undef my_init
+#undef my_minit
+#undef my_minit_cfg
+#undef my_msg_t
+#undef my_post
+#undef my_post_async
+#undef my_post_io
+#undef my_req_dispatch
+#undef my_req_t
+#undef my_resp_cb_on_msg
+#undef my_resp_cb_on_post_fail
+#undef my_resp_cb_on_sk_destroy
+#undef my_resp_cb_on_timeout
+#undef my_select_thread
+#undef my_sf_do_init
+#undef my_sf_init
+#undef my_sf_t
+#undef my_sk_alloc
+#undef my_sk_check_connect
+#undef my_sk_consume
+#undef my_sk_delete
+#undef my_sk_destroy
+#undef my_sk_do_decode
+#undef my_sk_do_flush
+#undef my_sk_flush
+#undef my_sk_free
+#undef my_sk_handle_event
+#undef my_sk_handle_event_ready
+#undef my_sk_handle_msg
+#undef my_sk_init
+#undef my_sk_msg_done
+#undef my_sk_new
+#undef my_sk_read
+#undef my_sk_t
+#undef my_start
+#undef my_t
+#undef my_thread_work
+#undef my_try_connect
+#undef my_write_queue_on_sk_destroy
