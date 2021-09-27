@@ -1,9 +1,12 @@
 #+Title: Rubber Duck
 
-an *experiment pure C source build container*.
+an *experiment C source build container*.
 
-It is a tiny pure C library, but not intented to be included by other source.
+It is a tiny pure C library, that intented to be included by other source.
 
+* quick start
+: git clone git@github.com:huafengxi/cog2.git
+: git clone git@github.com:huafengxi/rubber-duck.git rk
 for example: you write a =foo.c= , 
 #+begin_src c
   int64_t gx = 0;
