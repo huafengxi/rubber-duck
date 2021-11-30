@@ -22,7 +22,7 @@ typedef struct smc_t {
 
 static void smc_flush_cb(smc_t* io, smc_req_t* r) {
   unused(io);
-  dfree(r);
+  mod_free(r);
 }
 
 static int smc_sk_do_decode(smc_sk_t* s, smc_msg_t** msg) {
