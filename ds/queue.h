@@ -20,10 +20,12 @@ inline void queue_set(queue_t* q, link_t* n) {
 }
 
 inline link_t* queue_pop(queue_t* q) {
-there is a bug
   link_t* n = queue_top(q);
   if (n) {
-    queue_set(q, n);
+    q->head.next = n->next;
+    if (q->tail == n) {
+      q->tail = &q->head;
+    }
   }
   return n;
 }
